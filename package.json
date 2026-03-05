@@ -1,0 +1,25 @@
+{
+  "name": "codesentinel",
+  "version": "1.0.0",
+  "description": "AI-powered code review agent — powered by Claude",
+  "main": "src/index.js",
+  "bin": {
+    "codesentinel": "./src/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/cli.js",
+    "review": "node src/cli.js review"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ora": "^8.0.1",
+    "cli-table3": "^0.6.3"
+  },
+  "keywords": ["ai", "code-review", "claude", "security", "agent"],
+  "author": "CodeSentinel",
+  "license": "MIT",
+  "engines": { "node": ">=18.0.0" }
+}
